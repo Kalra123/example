@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8) url(img/Cover_anni40-50_1920x800.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: hue;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+}
+
+/* header */
+header {
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    width: 150px;
+}
+
+header .container .logo a {}
+
+header .container .logo a img {
+    width: 100%;
+}
+
+.memu_wrap {}
+
+.memu_wrap ul {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.memu_wrap ul li {}
+
+.memu_wrap ul li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search {}
+
+.search i {
+    color: #38a385;
+    font-size: 18px;
+}
+
+
+/* main_01 */
+.main_01 {
+    margin-top: 5%;
+}
+
+.main_01 .slider {}
+
+.main_01 .slider .slick-slide {
+    display: flex;
+    overflow: hidden;
+}
+
+
+.left_area {
+    width: 50%;
+    position: relative;
+}
+
+.left_area .vespa_img {
+    width: 120%;
+    padding-top: 160px;
+}
+
+.main_01 .slider .slick-active .left_area .vespa_img {
+    animation: fadeInR 0.5s 0.5s both;
+}
+
+.left_area .vespa_img img {
+    width: 100%;
+}
+
+.left_area .vespa_tit {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    z-index: -1;
+}
+
+.left_area .vespa_tit h2 {
+    font-size: 135px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main_01 .slider .slick-active .left_area .vespa_tit h2 {
+    animation: fadeInL 0.5s 0.7s both;
+}
+
+.left_area .vespa_tit p {
+    font-size: 19px;
+    color: #fff;
+    letter-spacing: 19px;
+    /* 자간 */
+
+}
+
+.main_01 .slider .slick-active .left_area .vespa_tit p {
+    animation: fadeInR 0.5s 0.9s both;
+}
+
+.right_area {
+    position: relative;
+    width: 50%;
+}
+
+.right_area .detailed_img {
+    position: absolute;
+    left: 0%;
+    top: 18%;
+    display: flex;
+    justify-content: center;
+}
+
+.right_area .detailed_img div {
+    width: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8%;
+}
+
+.main_01 .slider .slick-active .right_area .detailed_img div {
+    animation: FadeInT 0.5s 1s both;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.22, 1.64);
+}
+
+.main_01 .slider .slick-active .right_area .detailed_img .d_img02 {
+    animation-delay: 1.2s;
+}
+.main_01 .slider .slick-active .right_area .detailed_img .d_img03 {
+    animation-delay: 1.4s;
+}
+
+.right_area .detailed_img img {
+    width: 100%;
+}
+
+.right_area .middle_txt {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 70%;
+}
+
+.right_area .middle_txt p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.right_area .middle_txt .color_mode {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+}
+
+
+.right_area .middle_txt .color_mode .color {
+    padding: 10px 35px;
+}
+
+.right_area .middle_txt .color_mode .color i {
+    color: #b7babc;
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.right_area .middle_txt .color_mode .color span {
+    font-size: 16px;
+    color: #000;
+    vertical-align: 6px;
+}
+
+
+
+
+.right_area .bottom_area {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    display: flex;
+}
+
+.right_area .bottom_area .custom_btn {
+    border: 2px solid #fff;
+    margin-right: 20px;
+    position: relative;
+}
+
+.right_area .bottom_area .custom_btn a {
+    display: block;
+    padding: 10px 50px 10px 30px;
+}
+
+.right_area .bottom_area .custom_btn i {
+    position: absolute;
+    right: 22px;
+    top: 12px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.right_area .download_btn {
+    background-color: #38a385;
+    margin-right: 30px;
+
+}
+
+.right_area .download_btn a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.right_area .price {}
+
+.right_area .price span {
+    color: #fff;
+    font-size: 24px;
+    line-height: 42px;
+}
+
+
+/* slick 버튼 */
+.main_01 .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    font-size: 0;
+}
+
+.main_01 .slider .slick-prev {
+    left: -2%
+}
+
+.main_01 .slider .slick-prev:after {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    color: #38a385;
+    font-size: 48px;
+}
+
+
+.main_01 .slider .slick-next {
+    right: -2%
+}
+
+.main_01 .slider .slick-next:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    color: #38a385;
+    font-size: 48px;
+}
+
+
+@keyframes fadeInR {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInL {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes FadeInT {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

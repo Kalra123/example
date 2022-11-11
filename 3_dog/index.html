@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="animation"></div>
+        <div class="btn">
+            <a href="#">running</a>
+            <a href="#">paused</a>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        // $('누구').이벤트(할일);
+        $('.btn a').click(function(){
+            // $(this)는 클릭한 a를 잡아준다
+            var text = $(this).text();
+            console.log(text);
+            //.removeClass() 클래스명 삭제
+            //.removeClass(이름) 이름이라는 클래스명 삭제
+            //.addClass(이름) 이름을 클래스명으로 추가
+            $('#animation').removeClass().addClass(text);
+            //변수 text에 들어온 문자를 클래스 명으로 지정한다.
+        
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #efad1c;
+}
+
+#animation {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(animation.gif);
+    animation: ani 1s steps(24,start) infinite;
+    /* animation-play-state: paused; 사이트를 열 때 멈춰놓으려고 할 때*/ 
+}
+#animation.paused {
+    animation-play-state: paused;
+}
+#animation.running {
+    animation-play-state: running;
+}
+.btn {}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff8433;
+    padding: 8px 10px;
+    display: inline-block;
+}
+
+@keyframes ani {
+    0%{background-position: 0px,0px;}
+    100%{background-position: -9600px,0px;}
+}
